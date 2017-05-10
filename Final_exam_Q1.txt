@@ -1,0 +1,14 @@
+Download the handout and extract it.
+Start Mongo server using mongod command
+Navigate to the extracted folder.
+
+Navigate in dump directory and use command mongoimport as below
+> mongoimport –port 27017 -d enron -c messages messages.bson
+This will create enron database with messages collection.
+Now connect to mongo shell using command
+> use enron
+
+And execute following command to get your answer
+> db.messages.find({ “headers.From” : “andrew.fasstow@enron.com”, “headers.To” : “jeff.skilling@enron.com” }). count()
+
+Your answer is 3.

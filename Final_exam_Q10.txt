@@ -1,0 +1,10 @@
+Review below explan query and answer the question:
+
+Check below all the statements that are true about the way MongoDB handled this query.
+
+The query used an index to figure out which documents match the find criteria.
+The query returned 120,477 documents.
+The query scanned every document in the collection.
+The query avoided sorting the documents because it was able to use an index’s ordering.
+
+Answer :  The query scanned every document in the collection.

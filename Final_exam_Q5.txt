@@ -1,0 +1,14 @@
+Which of the indexes could be used by MongoDB to assist in answering the query? Check all that apply.
+
+_id_
+c_1
+a_1_c_1
+a_1_b_1_c_-1
+a_1_b_1
+
+Answer:
+
+c_1
+a_1_c_1
+a_1_b_1_c_-1
+a_1_b_1

@@ -1,0 +1,6 @@
+Start mongo server and connect to mongo shell
+Connect to enron database created in previous assignment using command
+> use enron
+
+And execute following command to get your answer
+>db.messages.aggregate([ { $unwind: ‘$headers.To’ }, { $group: { _id: { ‘from’ : ‘$headers.From’, ‘to’ :’$headers.To’ }, ‘sum’: { $sum : 1 } } }, { $sort : { ‘sum’ : 1 } }])

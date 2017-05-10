@@ -1,0 +1,11 @@
+Considered that your Mongo server is working fine and previous assignments are performed correctly
+Connect to enron database and execute following command to modify document in messages collection as
+db.messages.update({ ‘headers.Message-ID’: ‘<8147308.1075851042335.JavaMail.evans@thyme>’ }, { $addToSet: { ‘headers.To’: ‘mrpotatohead@mongodb.com’ } })
+
+After execution of above command, download handout.
+Navigate to the path where handout is downloaded
+And execute command as below
+mongo final3-validate-mongo-shell.js
+
+This script will check if your modification is successful.
+This script will return your answer as vOnRg05kwcqyEFSve96R
